@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registration Form</title>
+ <style>
+      .container {
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+      }
+</style>
+
+<script>
+function validate() {
+var registrationid = document.forms.registration_form.registrationid.value;
+var username = document.forms.registration_form.username.value;
+var password = document.forms.registration_form.password.value;
+var firstname = document.forms.registration_form.firstname.value;
+var lastname = document.forms.registration_form.lastname.value;
+var address = document.forms.registration_form.Address.value;
+var mobileno = document.forms.registration_form.mobileno.value;
+var cv = document.forms.registration_form.cv.value;
+if (registrationid == "") {
+alert("Please enter registration id");
+} else if (username == "") {
+alert("Please enter username");
+} else if (password == "") {
+alert("Please enter password");
+} else if (firstname == "") {
+alert("Please enter firstname");
+} else if (lastname == "") {
+alert("Please enter lastname");
+} else if (address == "") {
+alert("Please enter address");
+} else if (mobileno == "") {
+alert("Please enter mobileno");
+} else if (cv == "") {
+alert("Please enter cv");
+}
+}
+</script>
+
+</head>
+
+<body>
+<div class="container">
+<form name="registration_form">
+<table border="2" cellpadding="5" bgcolor="white" cellspacing="1" width="80%"
+align="center" style="border-color: #412997">
+<tr>
+<td colspan="3">
+<h1 align="center">Registration Form</h1>
+</td>
+</tr>
+
+<tr>
+<td>
+<b>Registration id:</b>
+</td>
+<td>
+<input type="text" name="registrationid" />
+</td>
+</tr>
+
+<tr>
+<td>
+<b>User Name:</b>
+</td>
+<td>
+<input type="text" name="username" />
+</td>
+</tr>
+
+<tr>
+<td>
+<b>Password:</b>
+</td>
+<td>
+<input type="password" name="password" />
+</td>
+</tr>
+
+<tr>
+<td>
+<b>First Name:</b>
+</td>
+<td>
+<input type="text" name="firstname" />
+</td>
+</tr>
+
+<tr>
+<td>
+<b>Last Name:</b>
+</td>
+<td>
+<input type="text" name="lastname" />
+</td>
+</tr>
+
+<tr>
+<td>
+<b>Gender</b>
+</td>
+<td><input type="radio" name="Gender" value="gender" />Male <input type="radio"
+name="Gender" value="gender" />Female</td>
+</tr>
+
+<tr>
+<td>
+<b>DOB:</b>
+</td>
+<td>
+<select name="day">
+<option value="DAY" selected>Day</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+</select>
+<select name="month">
+<option value="Month" selected>Month</option>
+<option value="January">January</option>
+<option value="February">February</option>
+<option value="March">March</option>
+<option value="April">April</option>
+<option value="May">May</option>
+</select>
+<select name="year">
+<option value="YEAR" selected>Year</option>
+<option value="2022">2022</option>
+<option value="2021">2021</option>
+<option value="2020">2020</option>
+<option value="2019">2019</option>
+<option value="2018">2018</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td>
+<b>Address</b>
+</td>
+<td>
+<textarea name="Address" rows="5" cols="30"> </textarea>
+</td>
+</tr>
+
+<tr>
+<td>
+<b>City:</b>
+</td>
+<td>
+<select name="city">
+<option value="city" selected>Surat</option>
+<option value="city">Mumbai</option>
+<option value="city">Jaipur</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td>
+<b>State:</b>
+</td>
+<td>
+<select name="State">
+<option value="State" selected>Gujarat</option>
+<option value="State">Maharashtra</option>
+<option value="State">Rajasthan</option>
+</select>
+</td>
+</tr>
+<tr>
+
+
+</tr>
+<tr>
+<td>
+<b>Mobile No:</b>
+</td>
+<td>
+<input type="text" name="mobileno" />
+</td>
+</tr>
+<tr>
+
+<td>
+<b>Attach Cv:</b>
+</td>
+<td>
+<input type="file" name="cv" />
+</td>
+</tr>
+
+<tr>
+<td colspan="3" align="center">
+<button type="submit" onclick="validate()">Submit</button>
+<button type="reset">Reset</button>
+</td>
+</tr>
+</table>
+</form>
+</div>
+</body>
+</html>
